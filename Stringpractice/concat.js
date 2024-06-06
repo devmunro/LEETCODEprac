@@ -9,10 +9,19 @@ function attempt1(s1,s2) {
     return s1 + s2
 }
 
-console.log(attempt1("hello", "world"))
 
 function attempt2(s1,s2) { 
 
     return s1 + "" + s2
 }
+
+
+function attempt3(s1,s2) {
+ return s1 + " " + s2
+
+}
+console.log(attempt3("hello", "world"))
+
+
+// practice complete
 
