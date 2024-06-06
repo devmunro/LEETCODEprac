@@ -49,4 +49,28 @@ function reverseString2(s) {
 }
 
 // Test the function
-console.log(reverseString2("olleh"));  // Expected Output: "olleH"
+// console.log(reverseString2("olleh"));  // Expected Output: "olleH"
+
+
+// practice complete
+
+// ### Incorrect Function to count the frequency of each character in a string
+function characterFrequency(s) {
+    let frequency = {};
+    for (let i = 0; i < s.length; i++) {
+        let char = s[i];
+        if (frequency[char]) {
+            frequency[char]++;
+        } else {
+            frequency[char] = 1;
+        }
+    }
+    return frequency
+}
+// console.log(characterFrequency("hello"));  // Expected Output: { h: 1, e: 1, l: 2, o: 1 }
+
+
+
+
+
+
