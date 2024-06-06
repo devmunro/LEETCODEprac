@@ -70,7 +70,22 @@ function characterFrequency(s) {
 // console.log(characterFrequency("hello"));  // Expected Output: { h: 1, e: 1, l: 2, o: 1 }
 
 
+///new problem
+// ### Incorrect Function to check if a string is a palindrome
+function isPalindrome(s) {
+    let left = 0;
+    let right = s.length - 1;
 
+    while (left < right) {
+        if (s[left] !== s[right]) {
+            return false;
+        }
+        left++;
+        right--; // changed to right --
+    }
+    return true;
+}
 
-
-
+// Test the function
+// console.log(isPalindrome("racecar"));  // Expected Output: true
+// console.log(isPalindrome("hello"));    // Expected Output: false
