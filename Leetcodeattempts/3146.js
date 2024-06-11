@@ -10,12 +10,18 @@ The permutation difference between s and t is defined as the sum of the absolute
 Return the permutation difference between s and t.*/
 
 //### Question ###
-var findPermutationDifference = function(s, t) {
-    
-};
+var findPermutationDifference = function (s, t) {};
 
 //###answer###
 
-var findPermutationDifference = function(s, t) {
-    
+var findPermutationDifference = function (s, t) {
+  let sumTotal = 0;
+  for (let i = 0; i < s.length; i++) {
+    for (let j = 0; j < t.length; j++) {
+      if (s[i] === t[j]) {
+        sumTotal += Math.abs(i - j);
+        console.log(sumTotal);
+      }
+    }
+  }
 };
